@@ -1,5 +1,8 @@
 import Add from "./Add"
 import Factorial from "./Factorial"
+import FromViewToCompClass from "./FromViewToCompClass"
+import FromViewToComp from "./FromViewToComponent"
+import SquareF from "./SquareF"
 import TrialProps from "./TrialProps"
 
 export default function App16(){
@@ -19,6 +22,12 @@ export default function App16(){
         <Factorial num1={5}></Factorial>
 
         <TrialProps func1={alpha} flag={true} point={obj} num1={45} str={"PPP"} arr={[10,20,30]}></TrialProps>
+
+        <FromViewToComp></FromViewToComp>
+
+        <FromViewToCompClass></FromViewToCompClass>
+
+        <SquareF></SquareF>
 
     </div>
 }
