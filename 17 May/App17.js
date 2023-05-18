@@ -3,6 +3,8 @@ import ParentComponent from "./ParentComponent";
 import SquareC from "./SquareC";
 import Header from "./header";
 import Fruits from "./Fruits";
+import CurrencyConverter from "./CurrencyConverter";
+import UserDetails from "./UserDetails";
 
 export default function App17(){
 
@@ -18,5 +20,9 @@ export default function App17(){
         <ParentComponent></ParentComponent>
 
         <Fruits></Fruits>
+
+        <CurrencyConverter></CurrencyConverter>
+
+        <UserDetails></UserDetails>
     </div>
 }

@@ -19,12 +19,14 @@ export default class Fruits extends Component{
     }
 
     getLi=()=>{
-        let arrayoflistitems=[]
-        for(var i=0; i<this.state.arr.length; i++){
-            let jsxelement=<li>{this.state.arr[i]}</li>
-            arrayoflistitems.push(jsxelement)
-        }
-        return arrayoflistitems
+        // let arrayoflistitems=[]
+        // for(var i=0; i<this.state.arr.length; i++){
+        //     let jsxelement=<li>{this.state.arr[i]}</li>
+        //     arrayoflistitems.push(jsxelement)
+        // }
+        // return arrayoflistitems
+        
+        return this.state.arr.map((fruitname,index)=>{return <li key={index}>{fruitname}</li>})
     }
 
     render(){
