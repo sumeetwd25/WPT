@@ -1,0 +1,1 @@
+Add shopstock.json in public folder before running PopulateData.js
