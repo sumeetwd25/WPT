@@ -1,19 +1,21 @@
-import { useState } from "react";
-import MainComponent from "./MainComponent";
-import PutAjaxEx from "./PutAjaxEx";
-import AjaxWithReactF from "./ajaxwithreact";
+// import { useState } from "react";
+// import MainComponent from "./MainComponent";
+// import PutAjaxEx from "./PutAjaxEx";
+// import AjaxWithReactF from "./ajaxwithreact";
+//import Putemployye from "./que1";
+import ShowId from "./que3";
 // import LifeCycleCEx from "./LifeCycleClassComponent";
-import PopulateData from "./PopulateDate";
-import LifeCycleF from "./LifeCycleFunctionComponent";
+ //import PopulateData from "./PopulateDate";
+// import LifeCycleF from "./LifeCycleFunctionComponent";
 
 
 export default function App19(){
 
-    let [choice, setchoice]=useState(false)
-    let [msg,setmsg]=useState("hi")
+    // let [choice, setchoice]=useState(false)
+    // let [msg,setmsg]=useState("hi")
 
     return <div>
-        <AjaxWithReactF></AjaxWithReactF>
+        {/* <AjaxWithReactF></AjaxWithReactF>
         <MainComponent></MainComponent>
         <PutAjaxEx></PutAjaxEx>
 
@@ -25,10 +27,15 @@ export default function App19(){
         setmsg(e.target.value)
        }}></input>
 
-       {/* {choice && <LifeCycleCEx message={msg}></LifeCycleCEx>} */}
+        {choice && <LifeCycleCEx message={msg}></LifeCycleCEx>} 
 
-       <PopulateData></PopulateData>
+ 
+        {choice && <LifeCycleF num1={msg}></LifeCycleF>} 
+ 
+        <Putemployye></Putemployye>
 
-       {choice && <LifeCycleF num1={msg}></LifeCycleF>}
+        <PopulateData></PopulateData>*/}
+        
+    <ShowId></ShowId> 
     </div>
 }

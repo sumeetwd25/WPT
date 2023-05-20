@@ -14,15 +14,18 @@ export default function AjaxWithReactF(){
     }
 
     function rows(){
-        return arr.map((employee)=>{
+        return arr.map((employee,index)=>{
             return (
-                <tr>
+                <tr key={index}>
+                <td>{index+1}</td>
                 <td>{employee.first_name.concat(" ",employee.last_name)}</td>
                 <td>{employee.email}</td>
                 <td><img alt="" src={employee.avatar} width="50" height="50"></img></td>
                 </tr>
                 )
+              
         })
+        
     }
 
     return <div>
@@ -30,7 +33,8 @@ export default function AjaxWithReactF(){
 
         <table border="1">
             <thead>
-                <tr><td>Name</td><td>Email</td><td>Photo</td></tr>
+                <tr>
+                    <td>Index</td><td>Name</td><td>Email</td><td>Photo</td></tr>
             </thead>
             <tbody>
                 {rows()}
